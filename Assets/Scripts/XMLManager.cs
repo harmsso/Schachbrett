@@ -17,6 +17,13 @@ public class XMLManager : MonoBehaviour
 
     //list of Figures
     public FigureDatabase figureDB;
+
+    public void SavePositions(){
+      XmlSerializer serializer = new XmlSerializer(typeof(FigureDatabase));
+      FileStream stream = new FileStream(Application.persistentDataPath + "/XML/figureStartingPoint.xml", FileMode.Create);
+      serializer.Serialize(stream, figureDB);
+      stream.Close();
+    }
 }
 
 [System.Serializable]
@@ -28,9 +35,4 @@ public class Figures {
 [System.Serializable]
 public class FigureDatabase{
   public List<Figures> list = new List<Figures>();
-}
-
-public enum Color{
-  Weiss,
-  Schwarz
 }

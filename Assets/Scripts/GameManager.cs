@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    Renderer m_Renderer;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,26 +18,30 @@ public class GameManager : MonoBehaviour
     }
 
     public void createGame(){
-      //Vector3 scaleFactor = new Vector3(0.5f,0.5f,0.5f);
+      Vector3 scaleFactor = new Vector3(0.5f,0.5f,0.5f);
 
-      displayWhiteSide();
+      displayWhiteSide(scaleFactor);
 
-      displayBlackSide();
+      displayBlackSide(scaleFactor);
+
+      XMLManager.SavePositions();
     }
 
-    public void displayWhiteSide(){
+    public void displayWhiteSide(Vector3 scaleFactor){
       foreach (Figures figure in XMLManager.ins.figureDB.list){
-        GameObject newCube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-
+        var newCube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        newCube.GetComponent<Renderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+        newCube.transform.localScale = scaleFactor;
         newCube.transform.position = figure.startingPos;
       }
     }
 
-    public void displayBlackSide(){
+    public void displayBlackSide(Vector3 scaleFactor){
       foreach (Figures figure in XMLManager.ins.figureDB.list){
-        GameObject newCube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-
-        newCube.transform.position = -(figure.startingPos);
+        var newCube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        newCube.GetComponent<Renderer>().material.color = new Color(0,0,0,0);
+        newCube.transform.localScale = scaleFactor;
+        newCube.transform.position = new Vector3(-figure.startingPos.x, 0.4f, -figure.startingPos.z);
       }
     }
 }
