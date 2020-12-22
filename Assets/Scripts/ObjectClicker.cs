@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ObjectClicker : MonoBehaviour
 {
+
+  GameObject CurObject;
     // Update is called once per frame
     void Update()
     {
@@ -13,6 +15,7 @@ public class ObjectClicker : MonoBehaviour
 
           if (Physics.Raycast(ray, out hit, 100.0f)) {
             if (hit.transform != null) {
+              CurObject = hit.transform.gameObject;
               PrintName(hit.transform.gameObject);
             }
           }
