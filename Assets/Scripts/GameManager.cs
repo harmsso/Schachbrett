@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
       foreach (Figures figure in XMLManager.ins.figureDB.list){
         var newCube = GameObject.CreatePrimitive(PrimitiveType.Cube);
         newCube.GetComponent<Renderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+        var boxCollider = newCube.AddComponent<BoxCollider>();
         newCube.transform.localScale = scaleFactor;
         newCube.transform.position = figure.startingPos;
       }
@@ -41,6 +42,7 @@ public class GameManager : MonoBehaviour
       foreach (Figures figure in XMLManager.ins.figureDB.list){
         var newCube = GameObject.CreatePrimitive(PrimitiveType.Cube);
         newCube.GetComponent<Renderer>().material.color = new Color(0,0,0,0);
+        var boxCollider = newCube.AddComponent<BoxCollider>();
         newCube.transform.localScale = scaleFactor;
         newCube.transform.position = new Vector3(-figure.startingPos.x, 0.4f, -figure.startingPos.z);
       }

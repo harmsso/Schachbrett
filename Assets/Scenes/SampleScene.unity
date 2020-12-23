@@ -321,7 +321,7 @@ GameObject:
   - component: {fileID: 143072965}
   m_Layer: 0
   m_Name: Left
-  m_TagString: Untagged
+  m_TagString: Schachbrett
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -351,8 +351,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.7493075, z: 0.47738367}
+  m_Center: {x: -3.4715394e-17, y: 0.3746537, z: -0.26130822}
 --- !u!23 &143072966
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -866,7 +866,7 @@ GameObject:
   - component: {fileID: 521490386}
   m_Layer: 0
   m_Name: Right
-  m_TagString: Untagged
+  m_TagString: Schachbrett
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -896,8 +896,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.5221082, z: 0.5488854}
+  m_Center: {x: 2.9622463e-18, y: 0.26105404, z: 0.22555736}
 --- !u!23 &521490387
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2295,7 +2295,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fabdaecc154c8c045b41cf3f15894505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurObject: {fileID: 0}
 --- !u!1 &973143573
 GameObject:
   m_ObjectHideFlags: 0
@@ -2353,7 +2352,7 @@ GameObject:
   - component: {fileID: 992389569}
   m_Layer: 0
   m_Name: "Fl\xE4che"
-  m_TagString: Untagged
+  m_TagString: Schachbrett
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2443,7 +2442,7 @@ GameObject:
   - component: {fileID: 1047502908}
   m_Layer: 0
   m_Name: Schachbrett
-  m_TagString: Untagged
+  m_TagString: Schachbrett
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2571,7 +2570,7 @@ GameObject:
   - component: {fileID: 1189188506}
   m_Layer: 0
   m_Name: Bottom
-  m_TagString: Untagged
+  m_TagString: Schachbrett
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2601,8 +2600,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.8367962, z: 0.5769472}
+  m_Center: {x: 0, y: 0.41839805, z: -0.2115264}
 --- !u!23 &1189188507
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3299,7 +3298,7 @@ GameObject:
   - component: {fileID: 1772016509}
   m_Layer: 0
   m_Name: Top
-  m_TagString: Untagged
+  m_TagString: Schachbrett
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3329,8 +3328,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 2.1773355, z: 0.5400171}
+  m_Center: {x: 0, y: 0.58866775, z: 0.22999144}
 --- !u!23 &1772016510
 MeshRenderer:
   m_ObjectHideFlags: 0

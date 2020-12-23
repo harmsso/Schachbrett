@@ -14,10 +14,13 @@ public class ObjectClicker : MonoBehaviour
           Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
           if (Physics.Raycast(ray, out hit, 100.0f)) {
-            if (hit.transform != null) {
+            if (hit.transform != null && hit.transform.gameObject.tag != "Schachbrett") {
               CurObject = hit.transform.gameObject;
-              PrintName(hit.transform.gameObject);
+              //PrintName(hit.transform.gameObject);
             }
+          }
+          if(hit.transform.gameObject.tag == "Schachbrett"){
+            CurObject = null;
           }
         }
     }
