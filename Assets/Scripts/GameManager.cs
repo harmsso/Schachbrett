@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    Renderer m_Renderer;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,11 +19,13 @@ public class GameManager : MonoBehaviour
     public void createGame(){
       Vector3 scaleFactor = new Vector3(0.5f,0.5f,0.5f);
 
+      XMLManager.ins.LoadPositions();
+
       displayWhiteSide(scaleFactor);
 
       displayBlackSide(scaleFactor);
 
-      XMLManager.SavePositions();
+      //XMLManager.ins.SavePositions();
     }
 
     public void displayWhiteSide(Vector3 scaleFactor){

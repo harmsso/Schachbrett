@@ -2295,6 +2295,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fabdaecc154c8c045b41cf3f15894505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurObject: {fileID: 0}
+--- !u!1 &973143573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 973143575}
+  - component: {fileID: 973143574}
+  m_Layer: 0
+  m_Name: CubeMovement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &973143574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973143573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf826165be4b79448e246ee14389fd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &973143575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973143573}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.9993086, y: 2.150118, z: -0.2955071}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &992389568
 GameObject:
   m_ObjectHideFlags: 0
@@ -3102,37 +3146,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   figureDB:
     list:
-    - FigureName: 1w
+    - FigureName: 1
       startingPos: {x: 3.5, y: 0.4, z: 3.5}
-    - FigureName: 2w
+    - FigureName: 2
       startingPos: {x: 3.5, y: 0.4, z: 2.5}
-    - FigureName: 3w
+    - FigureName: 3
       startingPos: {x: 3.5, y: 0.4, z: 1.5}
-    - FigureName: 4w
+    - FigureName: 4
       startingPos: {x: 3.5, y: 0.4, z: 0.5}
-    - FigureName: 5w
+    - FigureName: 5
       startingPos: {x: 3.5, y: 0.4, z: -0.5}
-    - FigureName: 6w
+    - FigureName: 6
       startingPos: {x: 3.5, y: 0.4, z: -1.5}
-    - FigureName: 7w
+    - FigureName: 7
       startingPos: {x: 3.5, y: 0.4, z: -2.5}
-    - FigureName: 8w
+    - FigureName: 8
       startingPos: {x: 3.5, y: 0.4, z: -3.5}
-    - FigureName: 9w
+    - FigureName: 9
       startingPos: {x: 2.5, y: 0.4, z: 3.5}
-    - FigureName: 10w
+    - FigureName: 10
       startingPos: {x: 2.5, y: 0.4, z: 2.5}
-    - FigureName: 11w
+    - FigureName: 11
       startingPos: {x: 2.5, y: 0.4, z: 1.5}
-    - FigureName: 12w
+    - FigureName: 12
       startingPos: {x: 2.5, y: 0.4, z: 0.5}
-    - FigureName: 13w
+    - FigureName: 13
       startingPos: {x: 2.5, y: 0.4, z: -0.5}
-    - FigureName: 14w
+    - FigureName: 14
       startingPos: {x: 2.5, y: 0.4, z: -1.5}
-    - FigureName: 15w
+    - FigureName: 15
       startingPos: {x: 2.5, y: 0.4, z: -2.5}
-    - FigureName: 16w
+    - FigureName: 16
       startingPos: {x: 2.5, y: 0.4, z: -3.5}
 --- !u!4 &1718062721
 Transform:

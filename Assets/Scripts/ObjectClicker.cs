@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObjectClicker : MonoBehaviour
 {
 
-  GameObject CurObject;
+  public static GameObject CurObject = null;
     // Update is called once per frame
     void Update()
     {

@@ -20,8 +20,15 @@ public class XMLManager : MonoBehaviour
 
     public void SavePositions(){
       XmlSerializer serializer = new XmlSerializer(typeof(FigureDatabase));
-      FileStream stream = new FileStream(Application.persistentDataPath + "/XML/figureStartingPoint.xml", FileMode.Create);
+      FileStream stream = new FileStream(Application.dataPath +"/XML/figureStartingPoint.xml", FileMode.Create);
       serializer.Serialize(stream, figureDB);
+      stream.Close();
+    }
+
+    public void LoadPositions(){
+      XmlSerializer serializer = new XmlSerializer(typeof(FigureDatabase));
+      FileStream stream = new FileStream(Application.dataPath +"/XML/figureStartingPoint.xml", FileMode.Open);
+      figureDB = serializer.Deserialize(stream) as FigureDatabase;
       stream.Close();
     }
 }
