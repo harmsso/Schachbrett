@@ -15,14 +15,10 @@ public class ObjectClicker : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, 100.0f))
             {
-                if (hit.transform != null && hit.transform.gameObject.tag != "Schachbrett")
+                if (hit.transform != null || hit.transform.gameObject.tag != "Schachbrett")
                 {
                     Selection.activeObject = hit.transform.gameObject;
                 }
-            }
-            if (hit.transform.gameObject.tag == "Schachbrett")
-            {
-
             }
         }
     }
